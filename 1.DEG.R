@@ -166,7 +166,7 @@ gg <- rbind(cluster1$genes, cluster2$genes)
 new_clusters <- degPatterns(cluster_vsd[gg, ], metadata=coldata, time="cond", plot=F)
 label <-c(`1` = "Down", `2` = "Up")
 
-tiff(filename = "clusterplot.tiff", 
+tiff(filename = "./output/clusterplot.tiff", 
      res=300, 
      width = 6, height = 4, units = "in",
      compression = c("lzw"))
